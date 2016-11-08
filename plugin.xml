@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.ourcodeworld.plugins.Filebrowser" version="1.0.0">
+    <name>Our Code World Filebrowser</name>
+    <engines>
+        <engine name="cordova" version=">=3.4.0" />
+    </engines>
+    <asset src="www/filebrowser.js" target="js/filebrowser.js" />
+    <js-module src="www/filebrowser.js" name="Filebrowser">
+        <clobbers target="window.OurCodeWorld.Filebrowser" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Filebrowser">
+                <param name="android-package" value="com.ourcodeworld.plugins.filebrowser.Filebrowser" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.ourcodeworld.plugins.filebrowser.DialogShowPicker"
+                android:label="Our Code World filepicker">
+                <intent-filter>
+                   <action android:name="com.ourcodeworld.plugins.filebrowser.DialogShowPicker" />
+                     <category android:name="android.intent.category.DEFAULT" />
+                 </intent-filter>
+            </activity>
+
+            <activity
+               android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+               android:label="Filepicker"
+               android:theme="@style/FilePickerTheme">
+               <intent-filter>
+                  <action android:name="android.intent.action.GET_CONTENT" />
+                  <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+            </activity>
+		</config-file>
+
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        </config-file>
+
+        <source-file src="src/android/Filebrowser.java" target-dir="src/com/ourcodeworld/plugin/" />
+        <source-file src="src/android/DialogShowPicker.java" target-dir="src/com/ourcodeworld/plugin/"/>
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+        <resource-file src="src/android/styles.xml" target="res/values/styles.xml" />
+    </platform>
+</plugin>
