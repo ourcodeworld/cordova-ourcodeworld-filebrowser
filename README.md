@@ -76,4 +76,4 @@ Check the documentation to see more methods of the plugin like the creation of f
 ## External links
 
 - [Documentation](http://ourcodeworld.com/projects/projects-documentation/6/list/cordova-ourcodeworld-filebrowser)
-- [Homepage](https://ourcodeworld.github.io/homepages/cordova/cordova-ourcodeworld-filebrowser.html)
+- [Homepage](https://ourcodeworld.github.io/cordova/cordova-filebrowser.html)
