@@ -1,0 +1,24 @@
+{
+  "name": "cordova-ourcodeworld-filebrowser",
+  "version": "1.0.0",
+  "description": "A Native file and folder browser for Android in Cordova",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser.git"
+  },
+  "keywords": [
+    "filebrowser",
+    "folderbrowser",
+    "filepicker"
+  ],
+  "author": "Our Code World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser/issues"
+  },
+  "homepage": "https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser#readme"
+}
