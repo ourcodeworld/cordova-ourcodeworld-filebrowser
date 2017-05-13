@@ -4,26 +4,19 @@ A cordova implementation of [NoNonsense-FilePicker](https://github.com/spacecowb
 
 This plugin allow you to select folder and files, and at the same time create folders and create files (not a file is created actually, but it will return the filepath and name of the "choosen path").
 
-<p>
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus6-picker-dark.png"
-width="25%"
-</img>
+width="25%" />
 
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus10-picker-dark.png"
-width="50%"
-</img>
+width="50%" />
 </p>
 
 <p>
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus6-picker-light.png"
-width="25%"
-</img>
+width="25%" />
 
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus10-picker-light.png"
-width="50%"
-</img>
-</p>
-
+width="50%" />
 ## Installation
 
 Install the plugin
