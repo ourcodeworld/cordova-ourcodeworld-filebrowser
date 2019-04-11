@@ -28,11 +28,11 @@ $ cordova plugin add https://github.com/ourcodeworld/cordova-ourcodeworld-filebr
 After installing the plugin, remember that the targetSdkVersion of cordova needs to be less than 24 e.g in Cordova 9.0.1, you need to specify inside the `config.xml` file of your project:
 
 ```xml
-<platform name="android">
-    <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="23" />
-</platform>
-```batch
+&#x3C;platform name=&#x22;android&#x22;&#x3E;
+    &#x3C;preference name=&#x22;android-minSdkVersion&#x22; value=&#x22;19&#x22; /&#x3E;
+    &#x3C;preference name=&#x22;android-targetSdkVersion&#x22; value=&#x22;23&#x22; /&#x3E;
+&#x3C;/platform&#x3E;
+```
 
 ## Usage
 
