@@ -22,6 +22,7 @@ public class Filebrowser extends CordovaPlugin {
             Intent intent = new Intent("com.ourcodeworld.plugins.filebrowser.DialogShowPicker");
             intent.putExtra("action", action);
             intent.putExtra("start_directory", startDirectory);
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             cordova.startActivityForResult((CordovaPlugin) this, intent, 0);
         } catch (ActivityNotFoundException e) {
             PluginResult errorResults = new PluginResult(PluginResult.Status.ERROR, "Cannot find activity com.ourcodeworld.plugins.filebrowser.DialogShowPicker");
