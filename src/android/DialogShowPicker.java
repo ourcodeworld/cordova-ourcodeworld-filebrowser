@@ -33,6 +33,7 @@ public class DialogShowPicker extends Activity{
             Context context = getApplicationContext();
             Intent i = new Intent(context, FilePickerActivity.class);
             i.putExtra(FilePickerActivity.EXTRA_ALLOW_CREATE_DIR, true);
+            i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
             // Set start up directory in case it's not the android default
             if(startDirectory.equals("default")){
@@ -106,6 +107,7 @@ public class DialogShowPicker extends Activity{
         // Send information
         Intent intent = new Intent();
         intent.putExtra("information", jsonArray.toString());
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         setResult(Activity.RESULT_OK, intent);
         finish();
     }
