@@ -19,7 +19,15 @@ import android.content.ClipData;
 public class DialogShowPicker extends Activity{
     static final int FILE_CODE = 1;
     private boolean firstTime = true;
-
+    
+    @Override
+    public void onCreate(){
+        super.onCreate();
+        
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder(); 
+        StrictMode.setVmPolicy(builder.build());
+    }
+    
     @Override
     public void onStart() {
         super.onStart();
