@@ -21,14 +21,6 @@ public class DialogShowPicker extends Activity{
     private boolean firstTime = true;
     
     @Override
-    public void onCreate(){
-        super.onCreate();
-        
-        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder(); 
-        StrictMode.setVmPolicy(builder.build());
-    }
-    
-    @Override
     public void onStart() {
         super.onStart();
 
