@@ -25,6 +25,15 @@ Install the plugin
 $ cordova plugin add https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser.git
 ```
 
+After installing the plugin, remember that the targetSdkVersion of cordova needs to be less than 24 e.g in Cordova 9.0.1, you need to specify inside the `config.xml` file of your project:
+
+```xml
+<platform name="android">
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="23" />
+</platform>
+```batch
+
 ## Usage
 
 A global object `OurCodeWorld.Filebrowser` will be available in your window. This object offers a file picker, folder picker, mixed folder and file picker and the file creation dialog.
